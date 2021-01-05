@@ -11,14 +11,13 @@
 
 </head>
 
-<body style="background-color:grey;">
+<body style="background-color:;">
  <div class="login">
-	<h1>TripAdvisor Predicting Rating From Review</h1>
-	  <p style="text-align:center;">Predict for free</p>
+	<h1 style="text-align:center;">TripAdvisor Predicting Rating From Review</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="review" placeholder="Review" required="required" />
+    	<style="text-align:center;" input type="text" name="review" placeholder="Review" required="required" />
     	
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
