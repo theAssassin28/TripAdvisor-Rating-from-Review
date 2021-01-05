@@ -4,21 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <title>TripAdvisor Predicting Rating From Review</title>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arial' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arial' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
 </head>
 
-<body style="background-color:;">
- <div class="login">
-	<h1 style="text-align:center;">TripAdvisor Predicting Rating From Review</h1>
+<body background="32b877ed4aa7778cc7d43ebb7d95a6f1.png";>
+ <div style="text-align:center;font-size:35px;" class="login">
+	<h1>TripAdvisor Predicting Rating From Review</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
-    <form style="text-align:center;" action="{{ url_for('predict')}}"method="post">
+    <form action="{{ url_for('predict')}}"method="post">
     	<input type="text" name="review" placeholder="Review" required="required" />
-    	
+
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 
